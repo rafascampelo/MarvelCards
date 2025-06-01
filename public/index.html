@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarvelCards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <main class="p-4 mt-5 flex flex-col justify-center items-center">
+      <div class="relative w-full max-w-md">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Buscar herói (ex: Iron Man)"
+          class="px-10 py-4 rounded-full text-black text-lg font-medium mb-6 w-full"
+        />
+      </div>
+
+      <div
+        id="cardContainer"
+        class="relative w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl h-[450px] bg-gradient-to-b from-red-900 via-red-700 to-black rounded-xl shadow-2xl p-6 flex flex-col items-center justify-center text-center transition-all duration-300"
+      >
+        <!-- Card vai ser inserido aqui pelo JS -->
+      </div>
+
+      <div class="flex gap-6 mt-4 justify-center">
+        <button
+          id="prevBtn"
+          class="bg-red-800 hover:bg-red-700 text-white px-4 py-4 rounded-full font-bold transition-colors duration-200"
+        >
+          ⬅️
+        </button>
+        <button
+          id="nextBtn"
+          class="bg-red-800 hover:bg-red-700 text-white px-4 py-4 rounded-full font-bold transition-colors duration-200"
+        >
+          ➡️
+        </button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
